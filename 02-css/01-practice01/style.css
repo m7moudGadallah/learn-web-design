@@ -1,0 +1,139 @@
+:root {
+  /* Variables */
+  --font-size__h1: 26px;
+  --font-size__h2: 40px;
+  --font-size__h3: 20px;
+  --font-size__h4: 20px;
+  --font-size__p: 22px;
+  --font-size__li: var(--font-size__p);
+
+  --line-height__p: 1.5;
+
+  --color__main: #1098ad;
+  --color__main--gray: #444;
+  --color__shade--gray: #f7f7f7;
+}
+
+/* Normalize */
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: var(--color__main--gray);
+  margin: 0 auto;
+  width: 800px;
+  padding: 0px;
+  border-top: 10px solid var(--color__main);
+  border-bottom: 10px solid var(--color__main);
+}
+
+.main-header {
+  background-color: var(--color__shade--gray);
+  padding: 20px 40px;
+}
+
+nav a:link {
+  display: inline-block;
+  padding-right: 30px;
+  padding-top: 5px;
+}
+
+h1 {
+  font-size: var(--font-size__h1);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+}
+
+h2 {
+  font-size: var(--font-size__h2);
+}
+
+h3 {
+  font-size: var(--font-size__h3);
+}
+
+h4 {
+  font-size: var(--font-size__h4);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color__main);
+}
+
+p {
+  font-size: var(--font-size__p);
+  line-height: var(--line-height__p);
+}
+
+li {
+  font-size: var(--font-size__li);
+}
+
+aside {
+  background-color: var(--color__shade--gray);
+  border-top: 5px solid var(--color__main);
+  border-bottom: 5px solid var(--color__main);
+}
+
+.post__img {
+  width: 100%;
+  height: auto;
+}
+
+#author-info p,
+footer p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.related-post__author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-posts {
+  list-style: none;
+}
+
+a:link {
+  color: var(--color__main);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color__main);
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+article {
+  position: relative;
+}
+
+article::before {
+  content: "TOP";
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  right: -20px;
+  top: -20px;
+}
