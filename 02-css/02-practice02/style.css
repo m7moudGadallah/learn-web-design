@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+  border: 4px solid;
+}
+
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.badge__free-shipping {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: gray;
+  font-size: 12px;
+}
+
+.product__info a:link {
+  color: black;
+  font-size: 16px;
+}
+
+.product__info a:hover {
+  text-decoration: none;
+}
+
+.product__details h2 {
+  text-transform: uppercase;
+}
+
+.add-to-cart__btn {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 18px;
+}
+
+.add-to-cart__btn:hover {
+  background-color: white;
+  color: black;
+}
