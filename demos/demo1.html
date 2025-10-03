@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        margin-top: 8rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      div[class^="item"] {
+        width: 8rem;
+        aspect-ratio: 1/1;
+        border-radius: 0.5rem;
+        color: white;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      div.item-1,
+      div.item-7 {
+        background-color: #fc6e86;
+      }
+
+      div.item-2,
+      div.item-8 {
+        background-color: #33bff2;
+      }
+
+      div.item-3,
+      div.item-10 {
+        background-color: #fac940;
+      }
+
+      div.item-4,
+      div.item-9 {
+        background-color: #4edd86;
+      }
+
+      div.item-5,
+      div.item-11 {
+        background-color: #a58ff4;
+      }
+
+      div.item-6,
+      div.item-12 {
+        background-color: #f372b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-1">1</div>
+      <div class="item-2">2</div>
+      <div class="item-3">3</div>
+      <div class="item-4">4</div>
+      <div class="item-5">5</div>
+      <div class="item-6">6</div>
+      <div class="item-7">7</div>
+      <div class="item-8">8</div>
+      <div class="item-9">9</div>
+      <div class="item-10">10</div>
+      <div class="item-11">11</div>
+      <div class="item-12">12</div>
+    </div>
+    <div class="white-space"></div>
+  </body>
+</html>
